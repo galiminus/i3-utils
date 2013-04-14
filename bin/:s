@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'uri'
+
+`chromium --app='http://google.com/search?q=#{URI.escape(ARGV.join(' '))}'`
